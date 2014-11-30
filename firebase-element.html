@@ -258,9 +258,7 @@ Example:
       this.log && console.log('acquired value ' + this.location);
       this.dataReady = true;
       this._setData(snapshot.val());
-      if (this.data) {
-        this.dataChange();
-      }
+      this.dataChange();
     },
     _setData: function(data) {
       this.closeObserver();
